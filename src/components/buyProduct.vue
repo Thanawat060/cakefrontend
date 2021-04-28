@@ -90,7 +90,7 @@ export default {
     },
     methods:{
         preOrder(){
-            const AddAPI = "http://localhost:4000/api/create-order";
+            const AddAPI = "http://mcafe.app.ruk-com.cloud/api/create-order";
             axios.post(AddAPI,this.Orser).then(()=>{
                 console.log("เพิ่มข้อมูลสำเร็จ");
                 this.$router.push('/');

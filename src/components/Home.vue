@@ -156,7 +156,7 @@ export default {
         }
     },
     created(){
-        let apiURL = 'http://localhost:4000/api/';
+        let apiURL = 'http://mcafe.app.ruk-com.cloud/api/';
         axios.get(apiURL).then(res => {
             this.products = res.data
         }).catch(error => {
@@ -192,7 +192,7 @@ export default {
             this.prod.stock= this.stock-this.num;
             this.prod.category= this.category;
             this.prod.p_detail= this.p_detail;
-            let apiURL = `http://localhost:4000/api/update-product/${id}`;
+            let apiURL = `http://mcafe.app.ruk-com.cloud/update-product/${id}`;
                 axios.put(apiURL, this.prod).then((res) => {
                     console.log(res);
                     this.$router.push('/')

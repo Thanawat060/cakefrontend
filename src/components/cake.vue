@@ -158,13 +158,13 @@ export default {
         }
     },
     created(){
-        let apiURL = 'http://localhost:4000/api/';
+        let apiURL = 'http://mcafe.app.ruk-com.cloud/api/';
         axios.get(apiURL).then(res => {
             this.products = res.data
         }).catch(error => {
             console.log(error)
         });
-        let apIURL = `http://localhost:4000/api/edit-Users/${this.$route.params.id}`;
+        let apIURL = `http://mcafe.app.ruk-com.cloud/api/edit-Users/${this.$route.params.id}`;
         axios.get(apIURL).then((res) => {
             this.user = res.data
         })
