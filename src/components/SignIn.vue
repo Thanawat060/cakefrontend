@@ -54,9 +54,9 @@ export default {
             userpass: [],
         }
     },
-    created(){
-        let apiURL = 'http://mcafe.app.ruk-com.cloud/api/show-user';
-        axios.get(apiURL).then(res => {
+    async created(){
+        let apiURL = 'http://cafecake.app.ruk-com.cloud/api/show-user';
+        await axios.get(apiURL).then(res => {
             this.userpass = res.data
         }).catch(error => {
             console.log(error)

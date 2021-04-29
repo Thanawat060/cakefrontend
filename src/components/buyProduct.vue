@@ -89,9 +89,9 @@ export default {
         }
     },
     methods:{
-        preOrder(){
-            const AddAPI = "http://mcafe.app.ruk-com.cloud/api/create-order";
-            axios.post(AddAPI,this.Orser).then(()=>{
+        async preOrder(){
+            const AddAPI = "http://cafecake.app.ruk-com.cloud/api/create-order";
+            await axios.post(AddAPI,this.Orser).then(()=>{
                 console.log("เพิ่มข้อมูลสำเร็จ");
                 this.$router.push('/');
                 this.Order = {

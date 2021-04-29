@@ -40,7 +40,7 @@ export default {
         }
     },
     created(){
-        let apiURL = 'http://mcafe.app.ruk-com.cloud/api/show-user';
+        let apiURL = 'http://cafecake.app.ruk-com.cloud/api/show-user';
         axios.get(apiURL).then(res => {
             this.userpass = res.data
         }).catch(error => {
