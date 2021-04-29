@@ -64,7 +64,6 @@ export default {
     },
     methods: {
         checklogin(user,pass){
-            let confirm = false;
             for(let i = 0;i <= this.userpass.length;i++){
                 if(pass == this.userpass[i].user_pass && user == this.userpass[i].user_user){  
                     alert("login success")
