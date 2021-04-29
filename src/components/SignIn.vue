@@ -72,7 +72,7 @@ export default {
                 }
                 if(i == this.username.length){
                         alert("username or password is wrongs")
-                    }
+                    
                 }
             }
             
