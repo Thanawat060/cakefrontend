@@ -70,10 +70,13 @@ export default {
                     alert("login success")
                     this.$router.push('/');
                 }
+                if(i == this.username.length){
+                    if(confirm == false){
+                        alert("username or password is wrongs")
+                    }
+                }
             }
-            if(confirm == false){
-                alert("username or password is wrongs")
-            }
+            
         }
     }
 }
