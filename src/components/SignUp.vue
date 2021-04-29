@@ -83,7 +83,7 @@ export default {
     },
     methods:{
         signUp(){
-            const AddAPI = "http://mcafe.app.ruk-com.cloud/api/create-user";
+            const AddAPI = "http://cafecake.app.ruk-com.cloud/api/create-user";
             axios.post(AddAPI,this.User).then(()=>{
                 console.log("เพิ่มข้อมูลสำเร็จแล้ว");
                 this.$router.push('/');
