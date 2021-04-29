@@ -167,7 +167,9 @@ export default {
         let apIURL = `http://mcafe.app.ruk-com.cloud/api/edit-Users/${this.$route.params.id}`;
         axios.get(apIURL).then((res) => {
             this.user = res.data
-        })
+        }).catch(error => {
+            console.log(error)
+        });
     },
     methods:{
         send_id(pro){
