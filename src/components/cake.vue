@@ -7,7 +7,7 @@
                         <td width="20%;" height="60px;"></td>
                         <td width="300px;"  align="center" class="fontKanti fontS18" style="cursor: pointer;padding:0px;margin:0px; color: white;" >
                             <router-link to="/cake">
-                                <button class="btn btn-outline-light" style="width:100%;height:60px;margin:0px;border-radius:0px;">CAKE</button>
+                                <button class="btn btn-outline-light" style="width:100%;height:60px;margin:0px;border-radius:0px;">KO</button>
                             </router-link>
                         </td>
                         <td width="300px;" align="center" class="fontKanti fontS18" style="cursor: pointer;padding:0px;margin:0px; color: white;" >

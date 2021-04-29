@@ -155,9 +155,9 @@ export default {
             iid:''
         }
     },
-    created(){
+    async created(){
         let apiURL = 'http://mcafe.app.ruk-com.cloud/api/';
-        axios.get(apiURL).then(res => {
+        await axios.get(apiURL).then(res => {
             this.products = res.data
         }).catch(error => {
             console.log(error)
