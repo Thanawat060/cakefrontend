@@ -155,9 +155,9 @@ export default {
             iid:''
         }
     },
-    created(){
-        let apiURL = 'http://mcafe.app.ruk-com.cloud/api/';
-        axios.get(apiURL).then(res => {
+    async created(){
+         let apiURL = 'http://cafecake.app.ruk-com.cloud/api/';
+        await axios.get(apiURL).then(res => {
             this.products = res.data
         }).catch(error => {
             console.log(error)
@@ -192,7 +192,7 @@ export default {
             this.prod.stock= this.stock-this.num;
             this.prod.category= this.category;
             this.prod.p_detail= this.p_detail;
-            let apiURL = `http://mcafe.app.ruk-com.cloud/update-product/${id}`;
+            let apiURL = `http://cafecake.app.ruk-com.cloud/update-product/${id}`;
                 axios.put(apiURL, this.prod).then((res) => {
                     console.log(res);
                     this.$router.push('/')
