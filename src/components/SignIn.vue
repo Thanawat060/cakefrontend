@@ -72,6 +72,7 @@ export default {
                 if(pass == this.userpass[i].user_pass && user == this.userpass[i].user_user){
                     alert("login success")
                     this.$router.push('/');
+                    break;
                 }
             }
        
