@@ -71,7 +71,6 @@ export default {
                     this.$router.push('/');
                 }
                 if(i == this.username.length){
-                    if(confirm == false){
                         alert("username or password is wrongs")
                     }
                 }
