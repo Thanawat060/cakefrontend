@@ -66,7 +66,7 @@ export default {
         checklogin(user,pass){
             let confirm = false;
             for(let i = 0 ; i <= this.userpass.length;i++){
-                if(i = this.username.length-1){
+                if(i == this.username.length-1){
                     if(confirm == false){
                         alert("username or password is wrongs")
                         this.$router.push('/signIn');
